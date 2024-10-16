@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API Udio Wrapper</title>
+    <script>
+        async function testApiCall() {
+            try {
+                const response = await fetch('https://udio-wrapper.onrender.com/'); // Sostituisci con l'URL corretto
+                const data = await response.text();
+                console.log('Risposta dal server:', data);
+                document.getElementById('response').innerText = data;
+            } catch (error) {
+                console.error('Errore durante la chiamata API:', error);
+                document.getElementById('response').innerText = 'Errore durante la chiamata API';
+            }
+        }
+
+        window.onload = function() {
+            document.getElementById('testButton').addEventListener('click', testApiCall);
+        };
+    </script>
+</head>
+<body>
+    <h1>Test API Udio Wrapper</h1>
+    <button id="testButton">Effettua Chiamata API</button>
+    <p id="response"></p>
+</body>
+</html>

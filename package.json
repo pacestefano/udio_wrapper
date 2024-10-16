@@ -1,0 +1,18 @@
+{
+  "name": "server-node-render-canzoni",
+  "version": "1.0.0",
+  "description": "Un semplice server Node.js per render.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Il tuo nome",
+  "license": "ISC"
+}
